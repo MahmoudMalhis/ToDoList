@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    width: 5px
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #c9c4c4;
+    border-radius: 6px;
+
+}
+
+.filer {
+    position: sticky;
+    top: -20px;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.input-container {
+    display: flex;
+    margin: 20px 0;
+}
+
+.input-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.task-list:hover {
+    background-color: #e0e0e0;
+}
+
+.task-list p {
+    margin: 0;
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+
+}
+
+.task-list button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.task-list button:hover {
+    background-color: #036ad8;
+}
+
+.task-list button:last-child {
+    background-color: #d9534f;
+}
+
+.task-list button:last-child:hover {
+    background-color: #c9302c;
+}
